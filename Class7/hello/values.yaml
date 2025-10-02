@@ -1,0 +1,14 @@
+deployment:
+  name: nginx
+  replicas: 2
+  image: 
+    repository: nginx
+    tag: "1.14.2x"
+  port: 80
+
+service:
+  name: nginx-svc 
+  port: 80
+  type: LoadBalancer
+
+
